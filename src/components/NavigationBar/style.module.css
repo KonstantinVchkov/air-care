@@ -1,0 +1,130 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  position: absolute;
+  width: 100%;
+}
+
+.addBtn {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background-color: #79b937;
+  border: 5px solid var(--clr);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.addBtn::before {
+  content: "+";
+  position: absolute;
+  font-size: 3em;
+  color: #fff;
+}
+
+.menuItem {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: #343a40;
+  transform: translateY(30px);
+}
+
+.addBtn i::before {
+  content: "";
+  position: absolute;
+  top: 22.5px;
+  left: -24px;
+  width: 21.2px;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 25px;
+  box-shadow: 3px -6px var(--clr);
+  cursor: auto;
+}
+
+.addBtn i::after {
+  content: "";
+  position: absolute;
+  top: 22.5px;
+  right: -24px;
+  width: 21.2px;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 25px;
+  box-shadow: -3px -6px var(--clr);
+  cursor: auto;
+}
+
+.menuItem ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+  line-height: 70px;
+}
+
+.menuItem ul li {
+  list-style: none;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.menuItem ul li {
+  padding-left: 0;
+}
+
+.menuItem ul li a {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--clr);
+}
+
+.locationArrow {
+  position: relative;
+  z-index: 100000000;
+}
+
+.arrowLoc {
+  color: #30343b;
+  position: absolute;
+  font-size: 35px;
+  right: 2%;
+  bottom: 600px;
+}
+
+.popupContainer {
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #343a40;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.label{
+  padding: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.submitButton{
+  margin-bottom: 0;
+  padding: 10px 30px;
+  background-color: #79b937;
+  border-radius: 10%;
+  cursor: pointer;
+  outline: none;
+}
