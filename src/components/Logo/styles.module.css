@@ -1,0 +1,13 @@
+.logoCont {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 990000;
+}
+
+.imgClass {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
